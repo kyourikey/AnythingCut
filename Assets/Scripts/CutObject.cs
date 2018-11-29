@@ -10,7 +10,7 @@ public abstract class CutObject : MonoBehaviour
     
     public bool CanCut()
     {
-        return CutLimit >= NowCutLevel;
+        return CutLimit > NowCutLevel;
     }
 
     public abstract void Cut();
